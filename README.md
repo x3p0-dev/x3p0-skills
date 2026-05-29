@@ -67,8 +67,6 @@ Skills are installed into `.claude/skills/` by default. The `path` key under
 |---|---|
 | `x3p0-theme-patterns` | WordPress block pattern conventions for themes |
 | `x3p0-theme-block-style-variations` | Block style variation conventions for themes |
-| `x3p0-wp-patterns` | General WordPress pattern fundamentals |
-| `x3p0-wp-block-style-variations` | General WordPress block style variation fundamentals |
 
 ---
 
