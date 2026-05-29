@@ -1,5 +1,5 @@
 ---
-name: x3p0-js-style
+name: x3p0-code-style-js
 description: >
   JavaScript coding standards and style guide. Use this skill before writing,
   editing, or reviewing any JavaScript in the theme — including Interactivity

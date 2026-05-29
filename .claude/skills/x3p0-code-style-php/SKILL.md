@@ -1,5 +1,5 @@
 ---
-name: x3p0-php-style
+name: x3p0-code-style-php
 description: >
   PHP coding standards and style guide. Use this skill before writing, editing,
   or reviewing any PHP code — including functions, classes, hooks, filters,

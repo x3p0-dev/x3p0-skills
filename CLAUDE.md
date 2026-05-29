@@ -24,11 +24,13 @@ Skills use a prefix that reflects their scope:
 | Prefix | Scope |
 |---|---|
 | `x3p0-` | General purpose — applies to both themes and plugins |
+| `x3p0-code-style-` | Coding style specific. |
 | `x3p0-theme-` | WordPress theme specific |
 | `x3p0-plugin-` | WordPress plugin specific |
 
 The folder name is the skill name. Examples:
-- `.claude/skills/x3p0-js-style/` — general JS conventions
+- `.claude/skills/x3p0-code-style-js/` — general JS conventions
+- `.claude/skills/x3p0-code-style-php/` — general PHP conventions
 - `.claude/skills/x3p0-theme-patterns/` — WordPress theme pattern conventions
 - `.claude/skills/x3p0-plugin-settings/` — WordPress plugin settings conventions
 
@@ -66,7 +68,7 @@ Content here.
 The installer is destructive — existing skill folders with matching names are
 overwritten on each run. This is intentional.
 
-Consuming projects may configure the destination path via `composer.json`:
+Consuming projects configure the destination path via `composer.json`:
 
 ```json
 "extra": {

@@ -58,8 +58,8 @@ Skills are installed into `.claude/skills/` by default. The `path` key under
 
 | Skill | Description |
 |---|---|
-| `x3p0-js-style` | JavaScript coding standards and style conventions |
-| `x3p0-php-style` | PHP coding standards and style conventions |
+| `x3p0-code-style-js` | JavaScript coding standards and style conventions |
+| `x3p0-code-style-php` | PHP coding standards and style conventions |
 
 ### Theme
 
