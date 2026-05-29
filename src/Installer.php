@@ -26,7 +26,7 @@ class Installer
 	/**
 	 * The source folder within the package that contains the skills.
 	 */
-	private const SKILLS_DIR = 'skills';
+	private const SKILLS_DIR = '.claude/skills';
 
 	/**
 	 * Composer post-install-cmd and post-update-cmd entry point. Copies all
