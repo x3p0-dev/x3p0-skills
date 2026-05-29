@@ -1,0 +1,7 @@
+{
+	"name": "x3p0-dev/x3p0-skills",
+	"type": "claude-skill",
+	"description": "Shared AI skills for WordPress themes and plugins.",
+	"version": "1.0.0",
+	"license": "GPL-2.0-or-later"
+}
