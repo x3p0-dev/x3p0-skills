@@ -1,5 +1,5 @@
 ---
-name: theme-block-style-variations
+name: x3p0-theme-block-style-variations
 description: >
   Creating and modifying block style variations (also called block styles)
   for WordPress block themes. Use this skill before creating any new block

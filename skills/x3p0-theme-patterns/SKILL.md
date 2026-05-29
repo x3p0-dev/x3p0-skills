@@ -1,5 +1,5 @@
 ---
-name: theme-patterns
+name: x3p0-theme-patterns
 description: >
   WordPress block pattern conventions. Use this skill before writing,
   editing, or reviewing any pattern file — regardless of theme or project.
