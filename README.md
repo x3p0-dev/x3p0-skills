@@ -21,7 +21,7 @@ in your `composer.json`:
 {
 	"scripts": {
 		"post-install-cmd": [
-			"@@x3p0-skills"
+			"@x3p0-skills"
 		],
 		"post-update-cmd": [
 			"@x3p0-skills"
