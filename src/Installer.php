@@ -21,12 +21,12 @@ class Installer
 	/**
 	 * The default destination path relative to the project root.
 	 */
-	private const DEFAULT_PATH = '.claude/skills';
+	private const INSTALL_PATH = '.claude/skills';
 
 	/**
 	 * The source folder within the package that contains the skills.
 	 */
-	private const SKILLS_DIR = '.claude/skills';
+	private const SKILLS_PATH = 'skills';
 
 	/**
 	 * Composer post-install-cmd and post-update-cmd entry point. Copies all
@@ -43,11 +43,11 @@ class Installer
 		$projectDir = dirname($vendorDir);
 
 		// Resolve the destination path from extra config or use the default.
-		$destination = $extra['x3p0']['skills']['path'] ?? self::DEFAULT_PATH;
+		$destination = $extra['x3p0']['skills']['path'] ?? self::INSTALL_PATH;
 		$destination = rtrim($projectDir . '/' . $destination, '/');
 
 		// Resolve the source path inside the installed package.
-		$source = $vendorDir . '/x3p0-dev/x3p0-skills/' . self::SKILLS_DIR;
+		$source = $vendorDir . '/x3p0-dev/x3p0-skills/' . self::SKILLS_PATH;
 
 		if (!is_dir($source)) {
 			$io->writeError('<warning>x3p0-skills: skills directory not found at ' . $source . '</warning>');

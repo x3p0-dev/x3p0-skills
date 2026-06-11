@@ -8,11 +8,11 @@ package. Skills are installed into consuming projects via `Installer.php`.
 ## What this package is
 
 Each skill is a `SKILL.md` file that provides Claude with context, conventions,
-and rules for a specific task. Skills live under `.claude/skills/` and are
+and rules for a specific task. Skills live under `skills/` and are
 discovered automatically by Claude Code.
 
 This package provides general-purpose skills shared across multiple projects.
-Project-specific skills live in each project's own `.claude/skills/` directory
+Project-specific skills live in each project's own `{folder}/skills/` directory
 and are never added here.
 
 ---
@@ -38,7 +38,7 @@ The folder name is the skill name. Examples:
 
 ## Adding a new skill
 
-1. Create a folder under `.claude/skills/` following the naming convention
+1. Create a folder under `skills/` following the naming convention
 2. Add a `SKILL.md` file inside it with a frontmatter header and content:
 
 ```
@@ -61,8 +61,8 @@ Content here.
 
 ## The installer
 
-`src/Installer.php` copies skills from `.claude/skills/` in this package into
-`.claude/skills/` in the consuming project. It runs via Composer's
+`src/Installer.php` copies skills from `skills/` in this package into
+`{folder}/skills/` in the consuming project. It runs via Composer's
 `post-install-cmd` and `post-update-cmd` hooks.
 
 The installer is destructive — existing skill folders with matching names are
